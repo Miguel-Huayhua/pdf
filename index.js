@@ -1,9 +1,6 @@
 const express = require("express");
-const { engine } = require("express/lib/application");
-const pdfkit = require('pdfkit')
 const app = express()
 const cors = require('cors')
-const fs = require('fs')
 
 app.set('port', process.env.PORT || 3000)
 app.use(cors())
