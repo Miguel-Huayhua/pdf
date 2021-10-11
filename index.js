@@ -8,11 +8,8 @@ const fs = require('fs')
 app.set('port', process.env.PORT || 3000)
 app.use(cors())
 app.get('/', (req, res) => {
-    let pdf = new pdfkit
-    pdf.pipe(fs.createWriteStream('prueba.pdf'))
-    pdf.text("hola a todos")
-    pdf.end()
-    res.download('prueba.pdf')
+    
+    res.download('pdf/prueba.pdf')
 }
 
 )
