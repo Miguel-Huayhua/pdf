@@ -6,7 +6,7 @@ app.set('port', process.env.PORT || 3000)
 app.use(cors())
 app.get('/', (req, res) => {
     
-    res.download('pdf/prueba.pdf');
+    res.send('holaaa');
 }
 
 )
